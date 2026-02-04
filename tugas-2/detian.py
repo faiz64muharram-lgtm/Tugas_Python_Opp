@@ -23,22 +23,10 @@ class Iblis(Monster):
         self.rage_mode()        
 
 
-    def hool(self):
-        
-        heal_amount = 20
-        self.heal(heal_amount)
-        print(f"\n🔥 {self.name} menggunakan: 🩸 Evil Soul Devouring!")
-        print(f"💚 {self.name} menerima +{heal_amount} HP!")
 
     def domain(self, target1, target2, target3):
-        
-
         dmg = 40
-        if self.rage:
-            dmg += 20
-
         print(f"\n🌑 {self.name} membuka: DOMAIN SOUL CORRUPTION!")
         print(f"💀 Semua target terkena {dmg} DMG!")
-
         for target in (target1, target2, target3):
             target.damage(dmg)

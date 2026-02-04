@@ -25,8 +25,7 @@ class Monster:
  
     def damage(self, damage):
        if self.hp <= 0:
-        return
-
+        return 
        self.hp -= damage
        print(f"🥊 {self.name} terkena {damage} Attack")
 
@@ -40,7 +39,6 @@ class Monster:
             self.hp += amount
             
            
-
     def critical(self,target):
          print(f"👿 anon terkena 0 DMG!")
 
